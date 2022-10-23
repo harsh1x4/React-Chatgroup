@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react';
 import logo_img from './assets/image/Symbol.svg';
 import google_img from './assets/image/google/google-48.svg';
 import rocket_53 from './assets/image/rocket/rocket-53.png';
-import rocket_48 from './assets/image/rocket/rocket-real-48.png';
-import chatBg from './assets/image/chatBg.png';
-import exit from './assets/image/exit.png';
+// import rocket_48 from './assets/image/rocket/rocket-real-48.png';
+// import chatBg from './assets/image/chatBg.png';
+// import exit from './assets/image/exit.png';
 import './App.css';
 
 import firebase from 'firebase/app';
@@ -103,8 +103,6 @@ function ChatRoom() {
         </div>
         <button className='button-send' type='submit' disabled={!formValue}><i className="fa-solid fa-paper-plane"></i></button>
       </form>
-      {/* <div class="type-area">
-      </div> */}
     </>
   )
 
