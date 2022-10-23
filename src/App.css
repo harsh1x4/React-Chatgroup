@@ -1,6 +1,7 @@
-body {
+/* body {
   background-color: #282c34;
 }
+
 .App {
   text-align: center;
   max-width: 728px;
@@ -82,7 +83,7 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #282c34;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -150,15 +151,266 @@ img {
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
-}
+} */
+
+/* ========================== */
+/* ========New Styles======== */
+/* ========================== */
 
 /* .App {
-  padding: 50px;
   background-color: #fff;
+  width: 50vw;
+  height: 90vh;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.App header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: blue;
+}
+
+.App header h1{
+  margin-left: 10px;
+}
+
+.App header button {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.App section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.App section .sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30%;
+  padding: 10px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+main {
+  padding: 10px;
+  height: 70vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 main::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.50rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+section .sign-in button {
+  background-color: aqua;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+section .sign-in p{
+  text-align: center;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+p {
+  max-width: calc(100% - 150px);
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.message {
+  display: flex;
+  align-items: center;
+}
+.sent {
+  flex-direction: row-reverse;
+}
+.sent p {
+  color: white;
+  background: #5F1EBE;
+  align-self: flex-end;
+}
+.received p {
+  color: #fff;
+  background: #222;
+}
+.form{
+  padding: 18px 30px;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+}
+.form input{
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size: 17px;
+  border: 1px solid #ccc;
+  padding: 0 13px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.form button{
+  width: 55px;
+  border: none;
+  outline: none;
+  background: #333;
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+} */
+
+/* ----Header and App Background---- */
+
+.App {
+  width: 380px;
+  margin: auto;
+  border: none;
+  outline: none;
+  background: #212121;
+  /* border-radius: 20px 20px 20px 20px; */
+  border-radius: 20px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  padding: 15px;
+  border-radius: 20px 20px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  background: #212121;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header div img {
+  height: 30px;
+  width: 30px;
+}
+
+.header div span {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f7f9fb;
+}
+
+/* ----SignIn---- */
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.sign-in button {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background: #111;
+  transition: all .3s ease;
+}
+.sign-in button:hover{
+  background: #000;
+}
+
+.sign-in button img {
+  height: 30px;
+  width: 30px;
+}
+
+.sign-in p {
+  margin-top: 10px;
+  font-size: 500;
+  text-align: center;
+  color: #f7f9fb;
+}
+
+/* SignOut button */
+.sign-out {
+  padding: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  /* background: #5F1EBE;
+  color: white; */
+  color: #fff;
+  background: #111;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+.sign-out:hover{
+  background: #000;
+}
+
+/* ChatRoom */
+main {
+  padding: 15px;
+  height: 70vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  background: url('./assets/image/chatBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+/* main::-webkit-scrollbar {
+  width: 0.50rem;
 }
 
 main::-webkit-scrollbar-track {
@@ -167,17 +419,102 @@ main::-webkit-scrollbar-track {
 
 main::-webkit-scrollbar-thumb {
   background: #6649b8;
-}
-button {
-  background-color: #5F1EBE;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: 500;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 16px;
 } */
+
+.message img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* margin: 2px 5px; */
+}
+
+/* Messsage */
+.message p {
+  max-width: calc(100% - 50px);
+  padding: 8px;
+  font-size: 14px;
+  margin: 5px 0;
+  position: relative;
+  color: white;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  align-items: flex-end;
+}
+
+.received {
+  align-items: flex-start;
+}
+
+.sent p {
+  color: white;
+  background: #5F1EBE;
+  align-self: flex-end;
+  border-radius: 5px 0 5px 5px;
+}
+
+.received p {
+  background: #222;
+  color: white;
+  border-radius: 0 5px 5px 5px;
+}
+
+/* Type Area */
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  /* background-color: #fff; */
+  background-color: #212121;
+  outline: none;
+  border: none;
+  border-radius: 0 0 20px 20px;
+}
+.form .input-wrapper {
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-radius: 0 0 0 20px;
+  width: 100%;
+}
+
+.form .input-wrapper input {
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  padding-right: 10px;
+  height: 100%;
+  /* width: 280px; */
+  width: 100%;
+  background: #212121;
+  color: #fff;
+  font-size: 14px;
+}
+.form .input-wrapper input::placeholder{
+  color: #9099a0;
+}
+
+.form button {
+  border: none;
+  outline: none;
+  /* background-color: #fff; */
+  /* color: #5F1EBE; */
+  /* margin-left: auto; */
+  background: #212121;
+  color: #9099a0;
+  width: 65px;
+  font-size: 20px;
+  border-radius: 0 0 20px 0;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.form button:hover{
+  background: #5F1EBE;
+  color: white;
+}
