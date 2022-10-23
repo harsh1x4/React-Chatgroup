@@ -55,7 +55,6 @@ function SignIn() {
   return (
     <>
       <div className='sign-in'>
-        {/* <button onClick={signInWithGoogle}><i className="fa-brands fa-google"></i>&nbsp;&nbsp;Sign In with Google&nbsp;<i className="fa-solid fa-rocket"></i><i className="fa-solid fa-rocket"></i><i className="fa-solid fa-rocket"></i></button> */}
         <button onClick={signInWithGoogle}><img src={google_img} alt="google-image" />&nbsp;&nbsp;Sign In with Google&nbsp;<img src={rocket_53} alt="rockets" /><img src={rocket_53} alt="rockets" /><img src={rocket_53} alt="rockets" /></button>
         <p>Respect the opinions of other users. Feel free to have a healthy debate, and keep the discussion objective and respectful. We want everyone to feel welcomed.</p>
       </div>
