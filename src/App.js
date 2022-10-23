@@ -7,10 +7,10 @@ import rocket_53 from './assets/image/rocket/rocket-53.png';
 // import exit from './assets/image/exit.png';
 import './App.css';
 
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
-import 'firebase/analytics';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+import 'firebase/compat/auth';
+import 'firebase/compat/analytics';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -55,7 +55,7 @@ function SignIn() {
   return (
     <>
       <div className='sign-in'>
-        <button onClick={signInWithGoogle}><img src={google_img} alt="google-image" />&nbsp;&nbsp;Sign In with Google&nbsp;<img src={rocket_53} alt="rockets" /><img src={rocket_53} alt="rockets" /><img src={rocket_53} alt="rockets" /></button>
+        <button onClick={signInWithGoogle}><img src={google_img} alt="google-logo" />&nbsp;&nbsp;Sign In with Google&nbsp;<img src={rocket_53} alt="rockets" /><img src={rocket_53} alt="rockets" /><img src={rocket_53} alt="rockets" /></button>
         <p>Respect the opinions of other users. Feel free to have a healthy debate, and keep the discussion objective and respectful. We want everyone to feel welcomed.</p>
       </div>
     </>
@@ -114,7 +114,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || `https://avatars.dicebear.com/api/gridy/Ashik Chapagain.svg`} />
+      <img src={photoURL || `https://avatars.dicebear.com/api/gridy/Ashik Chapagain.svg`} alt='avatar'/>
       <p>{text}</p>
     </div>
   </>)
