@@ -59,7 +59,7 @@
   cursor: pointer;
   color: #fff;
   background: #111;
-  transition: all .3s ease;
+  transition: all .3s ease-in-out;
 }
 .sign-in button:hover{
   background: #000;
