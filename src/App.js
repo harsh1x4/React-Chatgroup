@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import logo_img from './assets/image/Symbol.svg';
 import google_img from './assets/image/google/google-48.svg';
 import rocket_53 from './assets/image/rocket/rocket-53.png';
+import logo from './assets/image/Icons/icon8.svg'
 // import rocket_48 from './assets/image/rocket/rocket-real-48.png';
 // import chatBg from './assets/image/chatBg.png';
 // import exit from './assets/image/exit.png';
@@ -33,8 +34,9 @@ function App() {
     <div className="App">
       <header className='header'>
         <div>
-          <img src={logo_img} alt="avatar" />
-          <span className='name'>Chat</span>
+          {/* <img src={logo_img} alt="avatar" /> */}
+          <img src={logo} alt="avatar" />
+          <span className='name'>Group</span>
         </div>
         <SignOut />
       </header>
@@ -64,7 +66,7 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className='sign-out' onClick={() => auth.signOut()}>Sign Out&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></button> 
+    <button className='sign-out' onClick={() => auth.signOut()}>Sign Out&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-from-bracket"></i></button>
   )
 }
 
@@ -114,7 +116,7 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || `https://avatars.dicebear.com/api/gridy/Ashik Chapagain.svg`} alt='avatar'/>
+      <img src={photoURL || `https://avatars.dicebear.com/api/gridy/Ashik Chapagain.svg`} alt='avatar' />
       <p>{text}</p>
     </div>
   </>)

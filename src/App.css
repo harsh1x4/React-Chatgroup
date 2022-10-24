@@ -27,13 +27,13 @@
 }
 
 .header div img {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
 }
 
 .header div span {
   margin-left: 5px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #f7f9fb;
 }
