@@ -1,11 +1,7 @@
 import React, { useRef, useState } from 'react';
-import logo_img from './assets/image/Symbol.svg';
 import google_img from './assets/image/google/google-48.svg';
 import rocket_53 from './assets/image/rocket/rocket-53.png';
-import logo from './assets/image/Icons/icon8.svg'
-// import rocket_48 from './assets/image/rocket/rocket-real-48.png';
-// import chatBg from './assets/image/chatBg.png';
-// import exit from './assets/image/exit.png';
+import logo from './assets/image/icon8Color.svg';
 import './App.css';
 
 import firebase from 'firebase/compat/app';
