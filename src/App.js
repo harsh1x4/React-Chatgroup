@@ -112,12 +112,14 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || `https://avatars.dicebear.com/api/gridy/Ashik Chapagain.svg`} alt='avatar' />
+      <img src={photoURL || `https://avatars.dicebear.com/api/personas/${uid}.svg`} alt='avatar' />
       <p>{text}</p>
     </div>
   </>)
 }
 
 export default App;
+
+// https://avatars.dicebear.com/api/personas/harsh1x4.svg
 
 // 'https://api.adorable.io/avatars/23/abott@adorable.png'
